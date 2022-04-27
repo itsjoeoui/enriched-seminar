@@ -92,7 +92,7 @@ Let's also get rid of the concept of addition.
 
 <div v-click>
 
-In summary, this is how normal people does addition:
+In summary, this is how normal people do addition:
 ```python
 >>> expression = 1 + 1    # This is a normal math expression
 >>> expression
