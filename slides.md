@@ -138,7 +138,7 @@ By inputing everything as a string instead of a normal math expression, we are c
 
 <div v-click>
 
-<center><h2>A simple addition problem</h2></center>
+<center><h2><b>A simple addition problem</b></h2></center>
 
 </div>
 
@@ -150,7 +150,7 @@ to
 
 <div v-click>
 
-<center><h2>A machine translation problem</h2></center>
+<center><h2><b>A machine translation problem</b></h2></center>
 
 <br/>
 
