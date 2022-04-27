@@ -27,7 +27,7 @@ layout: center
 
 # Example
 
-Additions in Python with different data types
+Additions in Python with different data types.
 
 <div grid="~ cols-2 gap-4">
 <div v-click>
@@ -54,7 +54,7 @@ Checking the type:
 ___
 Input:
 ```python
->>> '1' + '1' 
+>>> '1' + '1'   # We don't want this
 ```
 Output:
 ```python
