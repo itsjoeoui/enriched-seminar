@@ -54,11 +54,11 @@ Checking the type:
 ___
 Input:
 ```python
->>> '1' + '1'   # We don't want this
+>>> '1' + '1' 
 ```
 Output:
 ```python
-'11'
+'11'    # We don't want this
 ```
 Checking the type:
 ```python
