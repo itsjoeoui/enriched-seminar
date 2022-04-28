@@ -331,6 +331,9 @@ As its name suggests, it is capable for **long-term memory**.
 
 </div>
 
+<br/>
+<br/>
+
 <div v-click>
 
 <center><h2><b>"I grew up in France ... (omit 500 words) I speak fluent French"</b></h2></center>
