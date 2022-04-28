@@ -125,12 +125,31 @@ In string form, the computer has no idea what "numbers" are and what does "addit
 
 ---
 
-# Transforming the problem with
+# Transforming the problem
 
 Think outside of the box.
 
 
 <div v-click>
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+```python
+>>> expression = 1 + 1   
+>>> expression
+2
+```
+</div>
+<div>
+
+```python
+>>> expression = '1 + 1'  
+>>> expression 
+'1 + 1'   # This is not what we want :((
+```
+</div>
+</div>
 
 By inputing everything as a string instead of a normal math expression, we are converting from
 
@@ -145,10 +164,6 @@ By inputing everything as a string instead of a normal math expression, we are c
 <div v-click>
 
 to
-
-</div>
-
-<div v-click>
 
 <center><h2><b>A machine translation problem</b></h2></center>
 
@@ -204,24 +219,177 @@ Since we have turned it into a machine translation problem, we can use the **Seq
 
 # Artificial Neural Network (ANN)
 
-Placeholder
+Starting from the basics.
+
+<div v-click>
+
+<center><img src="https://www.tibco.com/sites/tibco/files/media_entity/2021-05/neutral-network-diagram.svg" alt="ANN" width="600"/></center>
+
+</div>
+
+<div v-click>
+
+ANN is not smart enough because it doesn't have "**momory**", but it is still able to do things like curve fitting.
+
+</div>
+
+<div v-click>
+
+Image source: https://www.tibco.com/sites/tibco/files/media_entity/2021-05/neutral-network-diagram.svg
+
+</div>
+
+<style>
+  .slidev-vclick-target {
+    transition: opacity 500ms ease;
+  }
+  .slidev-vclick-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
 
 ---
 
 # Recurrent Neural Network (RNN)
 
-Placeholder
+Getting smarter!
+
+<div v-click>
+
+RNN addresses the major shortcoming of ANN. It is now able to **retain information** from a previous state.
+
+</div>
+
+<div v-click>
+
+For example, let's say we have a trained RNN that tries to predict the next word in a sentence.
+
+</div>
+
+<div v-click>
+
+<center><h2><b>"The clouds are in the __?__"</b></h2></center>
+
+</div>
+
+<div v-click>
+
+In this case, RNN can predict the next word because it is aware of the previous information => "**clouds**"
+
+</div>
+
+<div v-click>
+
+<center><h2><b>"The clouds are in the sky"</b></h2></center>
+
+</div>
+
+<div v-click>
+
+However, in the above example, the **distance** between the context and the place of prediction is small.
+
+</div>
+
+<div v-click>
+
+What if we have: 
+
+</div>
+
+<div v-click>
+
+<center><h2><b>"I grew up in France ... (omit 500 words) I speak fluent __?__"</b></h2></center>
+
+</div>
+
+<div v-click>
+
+When the **distance** is long, RNN fails :((
+
+</div>
+
+<style>
+  .slidev-vclick-target {
+    transition: opacity 500ms ease;
+  }
+  .slidev-vclick-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
 
 ---
 
 # Long Short-Term Memory Network (LSTM)
 
-Placeholder
+Even better!
+
+<div v-click>
+
+As its name suggests, it is capable for **long-term memory**. 
+
+</div>
+
+<div v-click>
+
+<center><h2><b>"I grew up in France ... (omit 500 words) I speak fluent French"</b></h2></center>
+
+</div>
+
+<br/>
+<br/>
+
+<div v-click>
+
+The **sequence to sequence** (seq2seq) model is one of the cool applications of LSTM.
+
+</div>
+
+<div v-click>
+
+It is often used in language translation problems, which is **highly context dependent**.
+
+</div>
+
+<br/>
+<br/>
+
+<div v-click>
+
+<center><h2><b>Let's translate some math expressions!</b></h2></center>
+
+</div>
+
+<style>
+  .slidev-vclick-target {
+    transition: opacity 500ms ease;
+  }
+  .slidev-vclick-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+---
+layout: center
+---
+# Demo
+
+https://github.com/itsjoeoui/seq2seq-arithmetic
+
+🙏🙏🙏 Let's pray that things are still working...
+
+---
+layout: center
+---
+
+# Don't be afraid!
 
 ---
 
-# One More Thing
+# Credit
 
-https://www.youtube.com/watch?v=xyrgkui0uCA
-
-<Youtube id="xyrgkui0uCA" :width='640' :height='360'/>
+- 
+-
+-
