@@ -173,7 +173,7 @@ to
 
 <div v-click>
 
-Basically translating from a math expression to its answer, just like how a translator may translate from English to French
+Think of it as **translating from a math expression to its answer**, just like how a translator may translate from English to French
 
 </div>
 
@@ -191,17 +191,74 @@ Basically translating from a math expression to its answer, just like how a tran
 
 # How can we do it?
 
-I am a bit lazy so I would like to solve it using a neural network.
+Let's explore our options for machine translation problems...
 
 <div v-click>
 
-Since we have turned it into a machine translation problem, we can use the **Sequence to Sequence (seq2seq)** model, which is the magic behind **Google Translate**, to solve our problem.
+1. **Rule-based** machine translation (RBMT)
+
+- Basically mapping from **word to word**. 
+- "We" $\rightarrow$ "Nous", "are" $\rightarrow$ "sommes", "graduating" $\rightarrow$ "diplômé(e/s/es)" 👨‍🎓 🎓 👩‍🎓
 
 <br/>
-<br/>
-<br/>
+</div>
 
-<center><img src="https://cscloud.itsjoeoui.com/wpHYOt19o8f9UcwN6fna/download" alt="Google Translate" width="500"/></center>
+<div v-click>
+
+2. **Statistical** machine translation (SMT)
+
+- Getting better, mapping from **sentence to sentence**. 
+- "Hristo is bad at chess." $\rightarrow$ "Hristo est mauvais aux échecs." ♟️
+
+<br/>
+</div>
+
+<div v-click>
+
+3. **Neural** machine translation (NMT)
+
+- The **neural network** learns from exiting translations and its own previous translations to keep improving its output.
+- Requires a huge amount of data. 🤖
+
+</div>
+
+<style>
+  .slidev-vclick-target {
+    transition: opacity 500ms ease;
+  }
+  .slidev-vclick-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+---
+
+# The solution
+
+I'm a bit lazy so I would like to train a neural network to add numbers.
+
+<div v-click>
+
+Since we have turned it into a machine translation problem, we can use the **neural machine translation** (NMT) approach to solve our problem.
+
+</div>
+
+<div v-click>
+
+More specifically, we will use the **Sequence to Sequence (seq2seq)** model, which is one of the cool applications of neural network, and is also the magic behind **Google Translate**, to solve our problem.
+
+<div grid="~ cols-2 gap-4">
+
+<div><img src="https://cscloud.itsjoeoui.com/LuQ8URjmFQ9oR8UzYWin/download" alt="Google Translate" width="500"/></div>
+
+<div>
+<br/>
+<br/>
+<br/>
+<img src="https://cscloud.itsjoeoui.com/wpHYOt19o8f9UcwN6fna/download" alt="Google Translate" width="500"/></div>
+
+</div>
 
 </div>
 
@@ -381,13 +438,13 @@ layout: center
 
 https://github.com/itsjoeoui/seq2seq-arithmetic
 
-🙏🙏🙏 Let's pray that things are still working...
+🙏 🙏 🙏  Let's pray that things are still working...
 
 ---
 layout: center
 ---
 
-# Don't be afraid!
+# Don't be afraid! 🚀
 
 ---
 
