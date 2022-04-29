@@ -448,8 +448,8 @@ layout: center
 
 ---
 
-# Credit
+# Thanks for listening!
 
-- 
--
--
+<center><img src="https://www.dawsoncollege.qc.ca/science-fest/wp-content/uploads/sites/152/SF2015_banner.png" alt="ANN" width="600"/></center>
+
+<center><img src="https://cscloud.itsjoeoui.com/ckD1RrAtmcnUwsCnM2Or/download" alt="ANN" width="600"/></center>
