@@ -453,3 +453,14 @@ layout: center
 <center><img src="https://www.dawsoncollege.qc.ca/science-fest/wp-content/uploads/sites/152/SF2015_banner.png" alt="ANN" width="600"/></center>
 
 <center><img src="https://cscloud.itsjoeoui.com/ckD1RrAtmcnUwsCnM2Or/download" alt="ANN" width="600"/></center>
+
+---
+
+# Credit
+
+- “A Ten-Minute Introduction to Sequence-To-Sequence Learning in Keras.” Keras.io, 2017, blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html. ‌
+- Brownlee, Jason. “Learn to Add Numbers with an Encoder-Decoder LSTM Recurrent Neural Network.” Machine Learning Mastery, 18 May 2017, machinelearningmastery.com/learn-add-numbers-seq2seq-recurrent-neural-networks/.
+- “Keras Documentation: Character-Level Recurrent Sequence-To-Sequence Model.” Keras.io, keras.io/examples/nlp/lstm_seq2seq/. ‌
+- Olah, Christopher. “Understanding LSTM Networks -- Colah’s Blog.” Github.io, 2015, colah.github.io/posts/2015-08-Understanding-LSTMs/. ‌
+
+Special thanks to my friend Junjie Yang at McGill University for his help! (github.com/JumjieYang)
